@@ -103,6 +103,7 @@ const Wave = () => {
     }
 
     animate();
+    return () => window.removeEventListener('resize', drawGrid);
   }, []);
 
   return <canvas ref={canvasRef} id="wave" />;

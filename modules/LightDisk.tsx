@@ -108,10 +108,10 @@ c0 241 -1 438 -3 438 -1 0 -38 -25 -82 -56z"/>
   </svg>
 );
 
-export default function LightDisk({id, link,  fillColor, children}: {id?:string, link:string,fillColor: string, children?:ReactNode}) {
+export default function LightDisk({id, link, ariaLabel,fillColor, children}: {id?:string, link:string,fillColor: string,ariaLabel?: string, children?:ReactNode}) {
 
   return (
-    <a id = {id} href={link} className='disk' style={{backgroundColor:fillColor, ['--glow-color' as any]: fillColor,}}><Disk/>
+    <a id={id} aria-label={ariaLabel} href={link} className='disk' style={{backgroundColor:fillColor, ['--glow-color' as any]: fillColor,}}><Disk/>
     {children}
     </a>
   )

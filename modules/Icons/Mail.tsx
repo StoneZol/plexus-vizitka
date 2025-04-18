@@ -7,6 +7,7 @@ export function Mail(props: SVGProps<SVGSVGElement>) {
         viewBox="0 0 14 14"
         width="3dvw"
         height="3dvw"
+        style={{transform: 'translateY(1%)'}}
         {...props}
       >
         <path

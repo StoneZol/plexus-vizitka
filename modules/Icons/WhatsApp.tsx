@@ -5,8 +5,9 @@ export function Whatsapp(props: SVGProps<SVGSVGElement>) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
-      width="3.5dvw"
-      height="3.5dvw"
+      width="3.4dvw"
+      height="3.4dvw"
+      style={{transform: 'translateX(1%) translateY(-1%)'}}
       {...props}
     >
       <path

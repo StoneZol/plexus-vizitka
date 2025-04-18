@@ -1,4 +1,4 @@
-import React, { Children } from 'react';
+import { ReactNode } from 'react';
 
 const Disk = () => (
 <svg  className='disk_base' version="1.0" xmlns="http://www.w3.org/2000/svg"
@@ -108,7 +108,8 @@ c0 241 -1 438 -3 438 -1 0 -38 -25 -82 -56z"/>
   </svg>
 );
 
-export default function LightDisk({id, link,  fillColor, children}: {id?:string, link:string,fillColor: string, children?:React.ReactNode}) {
+export default function LightDisk({id, link,  fillColor, children}: {id?:string, link:string,fillColor: string, children?:ReactNode}) {
+
   return (
     <a id = {id} href={link} className='disk' style={{backgroundColor:fillColor, ['--glow-color' as any]: fillColor,}}><Disk/>
     {children}

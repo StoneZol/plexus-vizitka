@@ -130,6 +130,11 @@ a {
   position: absolute;
   width: 10dvw;
   height: 10dvw;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 #name::before {

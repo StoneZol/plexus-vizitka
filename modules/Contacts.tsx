@@ -1,4 +1,3 @@
-import React from 'react'
 import LightDisk from './LightDisk'
 import { Phone } from './Icons/Phone'
 import { TG } from './Icons/TG'
